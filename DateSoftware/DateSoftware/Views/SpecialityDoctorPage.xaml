@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DateSoftware.Views.SpecialityDoctorPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Speciality"
+                   FontSize="30"
+                HorizontalOptions="CenterAndExpand"
+                   Margin="0,30,0,0"/>
+            <Entry x:Name="TxtDescription" Placeholder="Description" TextTransform="Uppercase" Margin="15,15,15,0"/>
+            <Button x:Name="BtnAddSpeciality" Text="ADD" BackgroundColor="Green" Clicked="BtnAddSpeciality_Clicked" Margin="15,15,15,0"/>
+            <Button x:Name="BtnBack" Text="BACK" Clicked="BtnBack_Clicked" Margin="15,15,15,0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

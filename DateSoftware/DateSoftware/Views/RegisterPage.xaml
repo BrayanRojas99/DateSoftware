@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DateSoftware.Views.RegisterPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="ID" x:Name="TxtId"/>
+            <Entry Placeholder="Full Name" x:Name="TxtFullName"/>
+            <Entry Placeholder="Phone Number" x:Name="TxtPhoneNumber"/>
+            <Entry Placeholder="Email" x:Name="TxtEmail"/>
+            <Entry Placeholder="Password" x:Name="TxtPassword" IsPassword="True"/>
+            <Switch x:Name="SwSeePassword" IsToggled="False" Toggled="SwSeePassword_Toggled"/>
+            <Picker x:Name="CboUserRol" Title="Select a User Role" TitleColor="Blue"
+                    ItemDisplayBinding="{Binding Description}" SelectedItem="{Binding UserRol}">
+                <!--<Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Hola soy una opcion</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>-->
+            </Picker>
+            <Button x:Name="BtnAgregar" Clicked="BtnAgregar_Clicked" Text="ADD" Background="green" TextColor="White"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="DateSoftware.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundImageSource="R.jgp"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Padding="20,0,20,0" VerticalOptions="Center">
+            <Image Source="l.png"  Margin="0,0,0,0" WidthRequest="300"/>
+            <Label Text="Happy Smile" TextColor="White" FontFamily="" HorizontalOptions="Center" Margin="0,0,0,20" FontSize="30"/>
+            <Entry x:Name="TxtEmail" Placeholder="User Name" FontSize="25" PlaceholderColor="White" TextColor="White" TextTransform="Uppercase"/>
+            <Entry x:Name="TxtPassword" Placeholder="Password" IsPassword="True" FontSize="25" PlaceholderColor="white" TextColor="White"/>
+            <Switch x:Name="SwSeePassword" IsToggled="False" Toggled="SwSeePassword_Toggled"/>
+            <Button x:Name="BtnLogin" VerticalOptions="Center" BackgroundColor="#0080FF" Text="Login" FontSize="25" TextColor="White" BorderColor="White" BorderWidth="2" CornerRadius="10" Clicked="BtnLogin_Clicked"/>
+            <Button x:Name="BtnRegister" VerticalOptions="Center" BackgroundColor="#0080FF" Text="Register" FontSize="25" TextColor="White" BorderColor="White" BorderWidth="2" CornerRadius="10" Margin="0,10,0,0" Clicked="BtnRegister_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

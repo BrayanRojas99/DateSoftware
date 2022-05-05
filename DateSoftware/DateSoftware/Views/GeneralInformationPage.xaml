@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DateSoftware.Views.GeneralInformationPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="Azure">
+                <StackLayout
+                    Margin="0,0,0,20"
+                    BackgroundColor="Azure"
+                    >
+                    <StackLayout
+                    x:Name="StackTittle"
+                    BackgroundColor="Aquamarine">
+                        <Label Text="About Me"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalOptions="CenterAndExpand"
+                       FontSize="35"
+                       TextColor="Blue"/>
+                    </StackLayout>
+
+                    <StackLayout
+                    x:Name="StackUserInformation"
+                    >
+                        <Entry x:Name="TxtId" Placeholder="ID" IsReadOnly="True"/>
+                        <Entry x:Name="TxtFullName" Placeholder="Full Name" IsReadOnly="True"/>
+                        <Entry x:Name="TxtPhoneNumber" Placeholder="Phone Number" IsReadOnly="True"/>
+                        <Entry x:Name="TxtEmail" Placeholder="Email" IsReadOnly="True"/>
+                        <Entry x:Name="TxtRole" Placeholder="Role" IsReadOnly="True"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Button x:Name="BtnUpdateUserInformation" Text="UPDATE" CornerRadius="50" Margin="5,0,5,0" Clicked="BtnUpdateUserInformation_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+                
+                
+                <StackLayout
+                    x:Name="StackGenearlInformation"
+                    Margin="0,0,0,20">
+                    <StackLayout
+                           BackgroundColor="Aquamarine"
+                        >
+                        <Label Text="General Information"
+                           FontSize="30"
+                           VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextDecorations="Underline"
+                               TextColor="Blue"
+                               />
+                    </StackLayout>
+
+                    <StackLayout>
+                        <Entry x:Name="TxtTypeBlood" Placeholder="Type Blood" IsReadOnly="True"/>
+                        <Entry x:Name="TxtGender" Placeholder="Gender" IsReadOnly="True"/>
+                        <Entry x:Name="TxtWeight" Placeholder="Weight" IsReadOnly="True"/>
+                        <Entry x:Name="TxtHeight" Placeholder="Height" IsReadOnly="True"/>
+                        <Entry x:Name="TxtAge" Placeholder="Age" IsReadOnly="True"/>
+                    </StackLayout>
+
+
+                    <StackLayout>
+                        <Button x:Name="BtnGeneralInformation" Text="UPDATE" CornerRadius="50" Margin="5,0,5,0"/>
+                    </StackLayout>
+
+                </StackLayout>
+
+                <StackLayout
+                    x:Name="StackAilment"
+                    Margin="0,0,0,0">
+                    <StackLayout
+                           BackgroundColor="Aquamarine"
+                        >
+                        <Label Text="Ailments"
+                           FontSize="30"
+                           VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               TextDecorations="Underline"
+                               TextColor="Blue"
+                               />
+                    </StackLayout>
+
+                    <ListView x:Name="LstAilment" RowHeight="150">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ImageCell/>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <StackLayout>
+                        <Button x:Name="BtnUpdateAilmentUser" Text="UPDATE"  CornerRadius="50" Margin="5,0,5,0"/>
+                    </StackLayout>
+                    
+                </StackLayout>
+
+
+            </StackLayout>
+            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

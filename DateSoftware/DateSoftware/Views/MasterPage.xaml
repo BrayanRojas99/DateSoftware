@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DateSoftware.Views.MasterPage"
+             Title="Master">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="CadetBlue">
+            
+            <Button
+                Text="About me" 
+                x:Name="BtnAcerca"
+                BackgroundColor="CadetBlue"
+                Clicked="BtnAbout_Clicked"
+                FontSize="20"
+                Margin="0,30,0,0"
+                />
+            <Button
+                Text="Doctors" 
+                x:Name="BtnCita"
+                BackgroundColor="CadetBlue"
+                Clicked="BtnDoctors_Clicked"
+                FontSize="20"
+                />
+            <Button
+                Text="Doctors" 
+                x:Name="Btn1"
+                BackgroundColor="CadetBlue"
+                FontSize="20"
+                />
+            <Button
+                Text="Doctors" 
+                x:Name="Btn2"
+                BackgroundColor="CadetBlue"
+                FontSize="20"
+                />
+            <Button
+                Text="Doctors" 
+                x:Name="Btn3"
+                BackgroundColor="CadetBlue"
+                FontSize="20"
+                />
+            <Button
+                Text="Doctors" 
+                x:Name="Btn4"
+                BackgroundColor="CadetBlue"
+                FontSize="20"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DateSoftware.Views.DoctorAddPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout Margin="0,40,0,0">
+            <Label HorizontalOptions="CenterAndExpand" FontSize="20">INFORMATION ABOUT THE DOCTOR</Label>
+            <Entry Placeholder="ID" TextTransform="Uppercase" x:Name="TxtId"/>
+            <Entry Placeholder="Full Name" TextTransform="Uppercase" x:Name="TxtFullName"/>
+            <Entry Placeholder="Phone Number" Keyboard="Numeric" x:Name="TxtPhoneNumber"/>
+            <Picker x:Name="CboSpecialityDoctor" Title="Select a Speciality" TitleColor="Blue"
+                    >
+                <!--<Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Hola soy una opcion</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>-->
+            </Picker>
+            <Button x:Name="BtnSpeciality" Text="ADD SPECIALITY" Margin="20,5,20,5" BackgroundColor="Aqua" Clicked="BtnSpeciality_Clicked"/>
+            <Entry Placeholder="Email" Keyboard="Email" x:Name="TxtEmail"/>
+            <Entry Placeholder="Adress" TextTransform="Uppercase" x:Name="TxtAdress" />
+            <Button x:Name="Btn" Text="ADD DOCTOR" Margin="5,5,5,5" BackgroundColor="Green" />
+            <Button x:Name="BtnBack" Text="BACK" Margin="5,5,5,5" Clicked="BtnBack_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
